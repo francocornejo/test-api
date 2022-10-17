@@ -6,10 +6,10 @@ import nodemailer from 'nodemailer'
 export let transporter = nodemailer.createTransport({
     host: "smtp.gmail.com",
     port: 465,
-    secure: true, 
+    secure: true, // true for 465, false for other ports
     auth: {
-      user: "fedec.fb@gmail.com", 
-      pass: process.env.MAILER_PASS, 
+      user: "cornejo.francodavid@gmail.com", // generated ethereal user
+      pass: process.env.MAILER_PASS, // generated ethereal password
     },
   });
 
@@ -17,4 +17,4 @@ export let transporter = nodemailer.createTransport({
     console.log("ready")
   })
 
-
+/* szgtdgzipcxkfykt */
